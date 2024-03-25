@@ -33,12 +33,12 @@ public class ArtSupply {
         name = c;
     }
 
-    public void paint(){
-        System.out.println("Scribble scribble scribble. You drew a + " + color + " picture using the " + brand + " " + name);
+    public void use(){
+        System.out.println("Scribble scribble scribble. You drew a + " + color + " picture using the " + brand + " " + name + ".");
     }
 
-    public void displayProperties(){
-        System.out.println("Your " + color + " art supply, " + name +", is of the " + brand + " brand.");
+    public String toString(){
+        return "Your " + color + " art supply, " + name +", is of the " + brand + " brand.";
     }
 
 }

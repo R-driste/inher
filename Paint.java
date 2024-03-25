@@ -24,14 +24,13 @@ public class Paint extends ArtSupply{
         milliliters = m;
     }
 
-    public void paint(){
+    public void use(){
         System.out.println("Swish Swish Swish. You painted a + " + super.getColor() + 
         " picture using the " + super.getBrand() + " Paint.");
     }
 
-    public void displayProperties(){
-        super.displayProperties();
-        System.out.println("It has a " + texture + " texture and also has " + milliliters + " mL left.")
+    public String toString(){
+        return super.toString() + " It has a " + texture + " texture and also has " + milliliters + " mL left.";
     }
 
 

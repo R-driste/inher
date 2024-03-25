@@ -25,15 +25,12 @@ public class Pen extends ArtSupply{
     }
 
 
-    public void paint(){
+    public void use(){
         System.out.println("Skrr Skrr Skrr. You etched a + " + super.getColor() + 
         " picture using the " + super.getBrand() + " Pen.");
     }
 
-    public void displayProperties(){
-        super.displayProperties();
-        System.out.println("It has type: " + type + ", and of diameter " + diameter + " mm.")
+    public String toString(){
+        return super.toString() + " It has type: " + type + ", and of diameter " + diameter + " mm.";
     }
-    
-
 }
